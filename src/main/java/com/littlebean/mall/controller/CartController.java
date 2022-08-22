@@ -27,6 +27,7 @@ public class CartController {
         //内部获取用户ID，防止横向越权
         List<CartVO> cartVOList = cartService.list(UserFilter.currentUser.getId());
 
+
         return ApiRestResponse.success(cartVOList);
     }
 
